@@ -2,8 +2,10 @@
 # Import required libraries
 import pandas as pd
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+# import dash_html_components as html
+# import dash_core_components as dcc
+from dash import html, dcc
+
 from dash.dependencies import Input, Output
 import plotly.express as px
 
@@ -90,4 +92,4 @@ def scatter(entered_site,payload):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True, port=8051)
