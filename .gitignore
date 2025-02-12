@@ -1,0 +1,14 @@
+# Ignore all files by default
+*
+
+# Allow .py files
+!*.py
+
+# Allow .ipynb files
+!*.ipynb
+
+# Allow directories (so Git can traverse them)
+!*/
+
+# Optional: Allow .gitignore itself
+!.gitignore
